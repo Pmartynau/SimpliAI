@@ -118,8 +118,8 @@ const ProModal = () => {
               size="lg"
               variant="gold"
               className="w-full  justify-between flex ">
-                <p className="text-lg font-light  text-background" >
-                ₱ 200/month
+                <p className="text-lg font-dark  text-background" >
+                $5/month
             </p>
             <div className="flex  justify-center items-center">
                Upgrade

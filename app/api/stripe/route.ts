@@ -41,7 +41,7 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "PHP",
+            currency: "USD",
             product_data: {
               name: "SimpliAi Gold",
               description: "Unlimited Ai Generations"
