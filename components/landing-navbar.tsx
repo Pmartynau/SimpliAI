@@ -28,7 +28,7 @@ export const LandingNavbar = () => {
             />
           </div>
           <h1 className={cn("text-2xl font-bold text-white", 
-          font.className)}>Genio Ai</h1>
+          font.className)}>Simpli Ai</h1>
         </Link>
         <div className="flex items-center gap-x-2">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>

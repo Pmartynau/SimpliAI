@@ -43,7 +43,7 @@ export async function GET() {
           price_data: {
             currency: "PHP",
             product_data: {
-              name: "GenioAi Gold",
+              name: "SimpliAi Gold",
               description: "Unlimited Ai Generations"
             },
             unit_amount: 20000,
