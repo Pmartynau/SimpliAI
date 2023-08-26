@@ -116,7 +116,7 @@ const ProModal = () => {
               disabled={loading}
               onClick={onSubscribe}
               size="lg"
-              variant="purple"
+              variant="gold"
               className="w-full  justify-between flex ">
                 <p className="text-lg font-dark  text-background" >
                 $5/month
