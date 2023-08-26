@@ -4,8 +4,8 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Genio Ai",
-    "short_name": "Genio",
+    "name": "Simpli Ai",
+    "short_name": "Simpli",
     "description": "Ai Platform",
     "icons": [
         {

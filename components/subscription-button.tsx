@@ -29,12 +29,12 @@ const SubscriptionButton = ({
     }
   }
   return (
-      <Button disabled={loading} variant={isPro ? "default" : "gold"} onClick={onClick}>
+      <Button disabled={loading} variant={isPro ? "default" : "white"} onClick={onClick}>
         {loading ? (
           <Loading/>
         ) : (
           <>
-          {isPro ? "Manage Subscription" : "Upgrade to Gold"}
+          {isPro ? "Manage Subscription" : "Upgrade to Premium"}
         {!isPro && <Zap className="w-4 h-4 fill-white ml-2"/>}
           </>
         )}

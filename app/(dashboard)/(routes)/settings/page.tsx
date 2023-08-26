@@ -25,8 +25,8 @@ const SettingsPage = async () => {
           {isPro ? (
             <p>
               You are currently on a
-              <Badge className="mx-2" variant="gold">
-                Gold
+              <Badge className="mx-2" variant="purple">
+                Premium
               </Badge>
               plan
             </p>
