@@ -29,7 +29,7 @@ const SubscriptionButton = ({
     }
   }
   return (
-      <Button disabled={loading} variant={isPro ? "default" : "white"} onClick={onClick}>
+      <Button disabled={loading} variant={isPro ? "default" : "gold"} onClick={onClick}>
         {loading ? (
           <Loading/>
         ) : (
