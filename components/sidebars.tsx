@@ -20,6 +20,7 @@ import FreeCounter from "./free-counter";
 import { NewModal } from "./new-modal";
 
 
+import './styles/fonts.css';
 
 const font = Montserrat({
   weight: "600",
@@ -117,7 +118,7 @@ export const Sidebar = ({
               src="/nlogo.png"
             />
           </div>
-          <h1 className={cn("text-2xl font-bold", font.className)} >
+          <h1 className={cn("text-2xl font-bold" , font.className)} >
             SimpliAi
           </h1>
         </Link>

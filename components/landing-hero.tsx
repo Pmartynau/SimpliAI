@@ -4,12 +4,13 @@ import { useAuth } from "@clerk/nextjs";
 import TypeWriterComponent from "typewriter-effect";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import './styles/fonts.css';
 
 export const LandingHero = () => {
   const isSignIn = useAuth();
   return (
     <div className="text-white font-bold py-24 text-center space-y-5 ">
-      <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
+      <div style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>
         <h1>The Best Ai Tool for</h1>
         <div className="text-transparent bg-clip-text bg-black/75">
           <TypeWriterComponent

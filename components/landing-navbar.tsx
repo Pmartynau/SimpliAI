@@ -8,6 +8,7 @@ import { useAuth } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
+import './styles/fonts.css';
 
 const font = Montserrat({
   weight: "600",
@@ -27,8 +28,7 @@ export const LandingNavbar = () => {
               src="/nlogo.png"
             />
           </div>
-          <h1 className={cn("text-2xl font-bold text-white", 
-          font.className)}>Simpli Ai</h1>
+          <h1 style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>Simpli Ai</h1>
         </Link>
         <div className="flex items-center gap-x-2">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
