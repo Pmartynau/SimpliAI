@@ -67,8 +67,13 @@ const tools = [
     bgColor: "bg-pink-500/10",
     color: "text-pink-500"
   },
-  
-
+  {
+  label: "Locofy",
+  icon: Code,
+  color: "text-rose-700",
+  bgColor: "bg-rose-700/10",
+  href: "/code"
+  }
 ]
 const DashboardPage = () => {
   const router =  useRouter();
