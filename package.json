@@ -39,7 +39,7 @@
     "cloudinary": "^1.40.0",
     "clsx": "^2.0.0",
     "cmdk": "^0.2.0",
-    "crisp-sdk-web": "^1.0.19",
+    "crisp-sdk-web": "^1.0.21",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
     "langchain": "^0.0.122",
