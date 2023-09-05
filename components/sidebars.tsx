@@ -40,7 +40,7 @@ const routes = [
     color: "text-green-700"
   },
   {
-    label: "Alter Ai Companion",
+    label: "Ask an Expert",
     icon: VenetianMask,
     href: "/alter",
     color: "text-amber-500",
@@ -75,7 +75,7 @@ const routes = [
     icon: FaToolbox,
     href: "/bookmarks",
     color: "text-white",
-    isNew: true,
+    isNew: false,
   },
   
   {

@@ -19,6 +19,7 @@ import {
   Settings,
   VenetianMask,
   Bookmark,
+  Heart
 } from "lucide-react";
 import FreeCounter from "./free-counter";
 import Loading from "@/app/loading";
@@ -46,7 +47,7 @@ const routes = [
     color: "text-green-700"
   },
   {
-    label: "Alter Ai Companion",
+    label: "Ask an Expert",
     icon: VenetianMask,
     href: "/alter",
     color: "text-amber-500",
@@ -83,7 +84,13 @@ const routes = [
     color: "text-white",
     isNew: true,
   },
-
+  {
+    label: "Feedback",
+    icon: Heart,
+    href:"/bookmarks",
+    color: "text-blue",
+    isNew: true,
+  },
   {
     label: "Settings",
     icon: Settings,

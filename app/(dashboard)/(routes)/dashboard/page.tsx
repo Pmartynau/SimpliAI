@@ -11,7 +11,8 @@ import {
   Settings,
   ArrowRight,
   VenetianMask,
-  Bookmark
+  Bookmark,
+  Heart,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -26,7 +27,7 @@ const tools = [
     href: "/conversation",
   },
   {
-    label: "Alter Ai Companion",
+    label: "Ask an Expert",
     icon: VenetianMask,
     color: "text-amber-500",
     bgColor: "bg-amber-500/10",
@@ -68,10 +69,10 @@ const tools = [
     color: "text-pink-500"
   },
   {
-  label: "Locofy",
-  icon: Code,
-  color: "text-rose-700",
-  bgColor: "bg-rose-700/10",
+  label: "FeedBack",
+  icon: Heart,
+  color: "text-blue-900",
+  bgColor: "bg-blue-900/10",
   href: "/code"
   }
 ]

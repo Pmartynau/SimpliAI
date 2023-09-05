@@ -126,9 +126,7 @@ const ProModal = () => {
               <Zap className="w-4 h-4 ml-2 fill-white" />
             </div>
              
-            </Button>
-        
-
+            </Button>     
         </DialogFooter>
       </DialogContent>
     </Dialog>
