@@ -44,7 +44,7 @@ export async function GET() {
             currency: "USD",
             product_data: {
               name: "SimpliAi Gold",
-              description: "Unlimited Ai Generations"
+              description: "Unlimited Ai Generation"
             },
             unit_amount: 500,
             recurring:{
