@@ -46,7 +46,7 @@ export async function GET() {
               name: "SimpliAi Gold",
               description: "Unlimited Ai Generations"
             },
-            unit_amount: 20000,
+            unit_amount: 500,
             recurring:{
               interval: "month"
             }

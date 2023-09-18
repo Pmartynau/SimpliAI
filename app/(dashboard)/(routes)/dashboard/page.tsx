@@ -73,7 +73,7 @@ const tools = [
   icon: Heart,
   color: "text-blue-900",
   bgColor: "bg-blue-900/10",
-  href: "/code"
+  href: "/feedback"
   }
 ]
 const DashboardPage = () => {
