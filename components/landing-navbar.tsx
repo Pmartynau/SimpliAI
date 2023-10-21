@@ -27,6 +27,7 @@ export const LandingNavbar = () => {
               fill
               alt="Logo"
               src="/nlogo.png"
+              className="rounded-full"
             />
           </div>
           <h1 style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>Simpli Ai</h1>

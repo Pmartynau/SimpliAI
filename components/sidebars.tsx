@@ -116,6 +116,7 @@ export const Sidebar = ({
               fill
               alt="Logo"
               src="/nlogo.png"
+              className="rounded-full"
             />
           </div>
           <h1 className={cn("text-2xl font-bold" , font.className)} >
