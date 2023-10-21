@@ -1,5 +1,5 @@
 async function main() {
-    await new Promise(resolve => {
+    await new Promise<void>(resolve => {
         setTimeout(()=> {
             console.log('hello');
             resolve();

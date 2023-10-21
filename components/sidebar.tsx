@@ -84,13 +84,6 @@ const routes = [
     color: "text-white",
     isNew: true,
   },
-  // {
-  //   label: "Feedback",
-  //   icon: Heart,
-  //   href:"/bookmarks",
-  //   color: "text-blue",
-  //   isNew: true,
-  // },
   {
     label: "Settings",
     icon: Settings,
