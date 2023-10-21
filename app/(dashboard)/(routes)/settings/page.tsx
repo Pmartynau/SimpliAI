@@ -24,6 +24,17 @@ const SettingsPage = async () => {
         <div className="text-muted-foreground text-sm">
           {isPro ? (
             <p>
+              You are currently on a <Badge className="mx-2" variant="gold">
+                Premium
+              </Badge>
+              plan
+            </p>
+          )}
+      </div>
+      <div className="p-8 space-y-4 ">
+        <div className="text-muted-foreground text-sm">
+          {isPro ? (
+            <p>
               You are currently on a
               <Badge className="mx-2" variant="gold">
                 Premium
