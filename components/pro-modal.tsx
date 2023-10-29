@@ -119,11 +119,7 @@ const ProModal = () => {
               variant="gold"
               className="w-full  justify-between flex ">
                 <p className="text-lg font-dark  text-background" >
-<<<<<<< HEAD
                 $5/month
-=======
-                $4.99/month
->>>>>>> 323b43b417662cbf51369b12e71434449d9e5767
             </p>
             <div className="flex  justify-center items-center">
                Upgrade
