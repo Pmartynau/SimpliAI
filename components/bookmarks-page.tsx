@@ -9,8 +9,6 @@ import NavbarBookmarks from "./navbar-bookmarks";
 
 
 const BookmarkNavPage = () => {
-
-
   const { theme } = useTheme();
   const [isDarkMode, setIsDarkMode] = useState
   (theme === "dark" || theme === "system");

@@ -8,6 +8,8 @@ import { useAuth } from "@clerk/nextjs";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 
+//tesla font
+import './styles/fonts.css';
 
 const font = Montserrat({
   weight: "600",
@@ -25,15 +27,20 @@ export const LandingNavbar = () => {
               fill
               alt="Logo"
               src="/nlogo.png"
+              className="rounded-full"
             />
           </div>
-          <h1 className={cn("text-2xl font-bold text-white", 
-          font.className)}>Simpli Ai</h1>
+          <h1 style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>Simpli Ai</h1>
         </Link>
         <div className="flex items-center gap-x-2">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-            <Button variant="outline" className="rounded-full">
+            <Button variant="outline" className="md:text-lg p-4 md:p-6 animate-slide-from-left">
               Get started
+            </Button>
+          </Link>
+          <Link href={isSignedIn ? "/pricing" : "/sign-up"}>
+            <Button variant="outline" className="md:text-lg p-4 md:p-6 animate-slide-from-left">
+              Pricing
             </Button>
           </Link>
         </div>

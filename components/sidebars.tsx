@@ -20,6 +20,7 @@ import FreeCounter from "./free-counter";
 import { NewModal } from "./new-modal";
 
 
+import './styles/fonts.css';
 
 const font = Montserrat({
   weight: "600",
@@ -39,7 +40,7 @@ const routes = [
     color: "text-green-700"
   },
   {
-    label: "Alter Ai Companion",
+    label: "Ask an Expert",
     icon: VenetianMask,
     href: "/alter",
     color: "text-amber-500",
@@ -74,7 +75,7 @@ const routes = [
     icon: FaToolbox,
     href: "/bookmarks",
     color: "text-white",
-    isNew: true,
+    isNew: false,
   },
   
   {
@@ -115,10 +116,11 @@ export const Sidebar = ({
               fill
               alt="Logo"
               src="/nlogo.png"
+              className="rounded-full"
             />
           </div>
-          <h1 className={cn("text-2xl font-bold", font.className)} >
-            SimpliAi
+          <h1 className={cn("text-2xl font-bold" , font.className)} >
+            Simpli Ai
           </h1>
         </Link>
         

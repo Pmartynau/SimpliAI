@@ -15,7 +15,7 @@ import { UseClientProvider } from '@/components/provider/sidebar-open'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SimpliAI',
+  title: 'Simpli AI',
   description: 'Ai Platform',
   manifest: '/manifest.webmanifest'
 }

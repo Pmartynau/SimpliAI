@@ -34,7 +34,7 @@ const SubscriptionButton = ({
           <Loading/>
         ) : (
           <>
-          {isPro ? "Manage Subscription" : "Upgrade to Gold"}
+          {isPro ? "Manage Subscription" : "Upgrade to Premium"}
         {!isPro && <Zap className="w-4 h-4 fill-white ml-2"/>}
           </>
         )}

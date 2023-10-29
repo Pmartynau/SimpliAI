@@ -18,8 +18,6 @@ const AlterEgoPage = () => {
     setIsDarkMode(theme === "dark" || theme === "system")
   }, [theme])
 
-  
-  
   return (
     <div>
       <NavbarAlter/>

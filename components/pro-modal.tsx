@@ -84,7 +84,7 @@ const ProModal = () => {
             <div className="flex items-center gap-x-2 font-bold py-1">
               Upgrade to Simpli Ai
               <Badge variant="gold" className="uppercase text-sm py-1">
-                Gold
+                Premium
               </Badge>
             </div>
           </DialogTitle>
@@ -119,16 +119,18 @@ const ProModal = () => {
               variant="gold"
               className="w-full  justify-between flex ">
                 <p className="text-lg font-dark  text-background" >
+<<<<<<< HEAD
                 $5/month
+=======
+                $4.99/month
+>>>>>>> 323b43b417662cbf51369b12e71434449d9e5767
             </p>
             <div className="flex  justify-center items-center">
                Upgrade
               <Zap className="w-4 h-4 ml-2 fill-white" />
             </div>
              
-            </Button>
-        
-
+            </Button>     
         </DialogFooter>
       </DialogContent>
     </Dialog>

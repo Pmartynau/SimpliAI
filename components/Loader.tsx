@@ -9,6 +9,7 @@ const Loader = () => {
          fill
          alt="logo"
          src="/nlogo.png"
+         className="rounded-full"
         />
       </div>
       <p className="text-sm text-muted-foreground">
