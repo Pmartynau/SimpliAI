@@ -1,13 +1,3 @@
-import React from 'react'
-
-const Pricing = () => {
-  return (
-    <div>Pricing Accordion</div>
-  )
-}
-
-export default Pricing
-
 import Image from 'next/image'
 import React, { Dispatch, SetStateAction, useEffect, useRef } from 'react'
 import minus from "../public/minus.svg";
@@ -61,4 +51,4 @@ const Accordion = ({question, answer, turn, setTurn, idx}: Props) => {
   )
 }
 
-export default Accordion
+export default Accordion;
