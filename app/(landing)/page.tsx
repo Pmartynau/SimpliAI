@@ -9,9 +9,9 @@ const LandingPage = () => {
 
   return ( 
     <div className="h-screen">
-      hello{/* <LandingNavbar />
+      <LandingNavbar />
       <LandingHero />
-      <LandingContent /> */}
+      <LandingContent />
     </div>
    );
 }
