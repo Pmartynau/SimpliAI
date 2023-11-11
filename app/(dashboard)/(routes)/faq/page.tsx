@@ -1,7 +1,12 @@
-/* eslint-disable react/jsx-key */
 'use client'
 import React from 'react';
 import Accordion from './Accordion';
+
+interface AccordionProps {
+  title: string;
+  content: string;
+}
+ 
 
 const App = () => {
   const accordionData = [
@@ -41,6 +46,7 @@ const App = () => {
       <h1>FAQ Page</h1>
       <div className="accordion">
         {accordionData.map(({ title, content }) => (
+          // eslint-disable-next-line react/jsx-key
           <Accordion title={title} content={content} />
         ))}
       </div>
