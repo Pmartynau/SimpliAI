@@ -13,7 +13,7 @@ const Loader = () => {
         />
       </div>
       <p className="text-sm text-muted-foreground">
-        Simpli is thinking...
+        SimplyFi is thinking...
       </p>
     </div>
    );
