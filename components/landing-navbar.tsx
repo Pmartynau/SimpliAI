@@ -38,11 +38,11 @@ export const LandingNavbar = () => {
               Get started
             </Button>
           </Link>
-          <Link href={isSignedIn ? "/pricing" : "/sign-up"}>
+          {/* <Link href={isSignedIn ? "/pricing" : "/sign-up"}>
             <Button variant="outline" className="md:text-lg p-4 md:p-6 animate-slide-from-left">
               Pricing
             </Button>
-          </Link>
+          </Link> */}
         </div>
     </nav>
   )

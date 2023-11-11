@@ -59,18 +59,18 @@ const routes = [
     href: "/image",
     color: "text-sky-500"
   },
-  {
-    label: "Video Generator",
-    icon: Video,
-    href: "/video",
-    color: "text-red-500"
-  },
-  {
-    label: "Music Generator",
-    icon: Music,
-    href: "/music",
-    color: "text-purple-600"
-  },
+  // {
+  //   label: "Video Generator",
+  //   icon: Video,
+  //   href: "/video",
+  //   color: "text-red-500"
+  // },
+  // {
+  //   label: "Music Generator",
+  //   icon: Music,
+  //   href: "/music",
+  //   color: "text-purple-600"
+  // },
   {
     label: "Code Generator",
     icon: Code,

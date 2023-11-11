@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Pricing = () => {
   return (
@@ -12,8 +12,9 @@ const Pricing = () => {
         Whether you&apos;re just trying out our service
         or need more, we&apos;ve got you covered.
       </p>
-    </div><div className='p-5'>
- hello world
+    </div>
+    <div className='p-5'>
+      
       </div></>
   )
 }

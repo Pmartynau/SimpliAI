@@ -3,7 +3,7 @@ import { z } from "zod";
 import { amountOptions, formSchema, resolutionOptions } from "../constants";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-
+import Modal from "react-modal";
 
 import { SelectItem, Select, SelectTrigger, SelectContent, SelectValue } from "@/components/ui/select";
 
@@ -28,9 +28,8 @@ export const ConversationForm = ({
       resolution: "512x512"
     }
   });
-
   const handleFormSubmit = async (values: z.infer<typeof formSchema>) => {
-
+  
     try {
       await onSubmit(values);
       form.reset();
@@ -46,7 +45,7 @@ export const ConversationForm = ({
           className={`
           fixed 
           bottom-0
-          rounded-lg
+        rounded-lg
           border
           w-full
           md:w-1/2
@@ -59,7 +58,7 @@ export const ConversationForm = ({
           lg:mx-0
           md:px-6
           focus-within:shadow-sm
-         
+      
           
           gap-2 border-primary/10
           bg-background
@@ -152,7 +151,7 @@ export const ConversationForm = ({
             <Button
               variant="premium"
               className="relative lg:absolute lg:top-6 lg:right-2 col-span-12  lg:col-span-2 "
-              disabled={isLoading}
+              disabled={isLoading}   
             >
               Generate
             </Button>

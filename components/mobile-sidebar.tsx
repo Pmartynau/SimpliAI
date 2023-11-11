@@ -55,7 +55,7 @@ const MobileSidebar = ({
         </Button>
       </SheetTrigger>
       {isSidebarOpen && (
-        <SheetContent side="left" className="p-0">
+        <SheetContent side="right" className="p-0">
           <Sidebar
             isPro={isPro}
             apiLimitCount={apiLimitCount}

@@ -19,7 +19,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Separator } from "@/components/ui/separator";
 import ConversationMessages from "./conversation-messages";
 import { ConversationForm } from "./coversation-form";
-
+import ConversationHistory from "../../image/components/conversation-history";
 
 export const ClientPage = () => {
   const proModal = useProModal();
@@ -68,6 +68,7 @@ export const ClientPage = () => {
         iconColor="text-green-700"
         bgColor="bg-green-700/5"
       />
+      <ConversationHistory/>
       <ConversationMessages isLoading={isLoading} messages={messages} />
       <ConversationForm onSubmit={handleSubmit} isLoading={isLoading} />
     </div>
