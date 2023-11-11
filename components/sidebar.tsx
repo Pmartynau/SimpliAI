@@ -157,7 +157,7 @@ const Sidebar = ({
                       />
                     </div>
                     <h1 className={cn("text-2xl font-bold", font.className)} >
-                      SimpliAI
+                      SimplyfiAI
                     </h1>
 
                   </Link>

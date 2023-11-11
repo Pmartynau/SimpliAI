@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 
-const Accordion = ({ title, content }) => {
+interface AccordionProps {
+  title: string;
+  content: string;
+}
+
+const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
