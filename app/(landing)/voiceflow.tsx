@@ -1,5 +1,6 @@
 
 'use client'
+
 import React, { useEffect } from 'react';
 
 const VoiceflowChat = () => {
@@ -7,7 +8,7 @@ const VoiceflowChat = () => {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.onload = () => {
-      window.voiceflow.chat.load({
+      (window as any).voiceflow.chat.load({
         verify: { projectID: '6551dca7e25d4b0007e9f6e5' },
         url: 'https://general-runtime.voiceflow.com',
         versionID: 'production'
@@ -22,7 +23,7 @@ const VoiceflowChat = () => {
     };
   }, []);
 
-  return null; // Since this component is only responsible for loading the script, it doesn't render any content
+  return null;
 };
 
 export default VoiceflowChat;
