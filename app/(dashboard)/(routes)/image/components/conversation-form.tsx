@@ -151,7 +151,8 @@ export const ConversationForm = ({
             <Button
               variant="premium"
               className="relative lg:absolute lg:top-6 lg:right-2 col-span-12  lg:col-span-2 "
-              disabled={isLoading}   
+              disabled={isLoading}
+               
             >
               Generate
             </Button>

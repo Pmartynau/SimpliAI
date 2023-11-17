@@ -49,15 +49,12 @@ export async function POST (
     if (!freeTrial && !isPro) {
       return new NextResponse("Free trial has expired", { status: 403 })
     }
-
     const response = await openai.createImage({
-      //model: "dall-e-3",
+      model: "dall-e-3",
       prompt,
-      n: parseInt(amount, 10),
-      size: resolution,
-
+      n: 1,
+      size: "1024x1024",
     });
-
     if (!isPro) {
       await increaseApiLimit();
     }

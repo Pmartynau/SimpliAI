@@ -41,6 +41,23 @@ export const ConversationForm: React.FC<ChatFormProps> = ({ onSubmit, isLoading 
     }
   }
 
+  const handleEnterKey = (e: KeyboardEvent) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      // Trigger form submission when Enter key is pressed
+      e.preventDefault();
+      form.handleSubmit(handleFormSubmit)();
+    }
+  };
+
+  React.useEffect(() => {
+    // Add event listener for keydown on the document
+    document.addEventListener("keydown", handleEnterKey);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("keydown", handleEnterKey);
+    };
+  }, []); 
   return (
     
     <div className="flex justify-center p-4  ">
@@ -84,6 +101,7 @@ export const ConversationForm: React.FC<ChatFormProps> = ({ onSubmit, isLoading 
                   disabled={isLoading}
                   placeholder="Can you explain the Riemann Hypothesis in simple terms?"
                   {...field}
+                  
                 />
               </FormItem>
             )}

@@ -42,7 +42,7 @@ export async function POST (
 
 
     const response = await openai.createChatCompletion({
-        model: "gpt-4-1106-preview",
+        model: "gpt-4",
         messages
       });
     
