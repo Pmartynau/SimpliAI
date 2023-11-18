@@ -25,22 +25,6 @@ export const ConversationForm: React.FC<ChatFormProps> = ({ onSubmit, isLoading 
     }
   });
 
-  const handleFormSubmit = async (values: z.infer<typeof formSchema>) => {
-    try {
-      // Attempt to submit the form
-      await onSubmit(values);
-      
-      // If the submission was successful, reset the form
-      form.reset();
-    } catch (error) {
-      // Handle errors that occur during submission
-      console.error('Submission error:', error);
-  
-      // Optionally, display an error message to the user
-      // errorMessageElement.textContent = 'An error occurred. Please try again.';
-    }
-  }
-
   const handleEnterKey = (e: KeyboardEvent) => {
     if (e.key === "Enter" && !e.shiftKey) {
       // Trigger form submission when Enter key is pressed
@@ -58,6 +42,23 @@ export const ConversationForm: React.FC<ChatFormProps> = ({ onSubmit, isLoading 
       document.removeEventListener("keydown", handleEnterKey);
     };
   }, []); 
+  
+  const handleFormSubmit = async (values: z.infer<typeof formSchema>) => {
+    try {
+      // Attempt to submit the form
+      await onSubmit(values);
+      
+      // If the submission was successful, reset the form
+      form.reset();
+    } catch (error) {
+      // Handle errors that occur during submission
+      console.error('Submission error:', error);
+  
+      // Optionally, display an error message to the user
+      // errorMessageElement.textContent = 'An error occurred. Please try again.';
+    }
+  }
+
   return (
     
     <div className="flex justify-center p-4  ">
@@ -101,7 +102,6 @@ export const ConversationForm: React.FC<ChatFormProps> = ({ onSubmit, isLoading 
                   disabled={isLoading}
                   placeholder="Can you explain the Riemann Hypothesis in simple terms?"
                   {...field}
-                  
                 />
               </FormItem>
             )}
