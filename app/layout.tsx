@@ -10,7 +10,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import Head from 'next/head'
 import { UseClientProvider } from '@/components/provider/sidebar-open'
-
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   description: 'Ai Platform',
   manifest: '/manifest.webmanifest'
 }
-
 export default function RootLayout({
   children,
 }: {
@@ -39,6 +38,7 @@ export default function RootLayout({
               {children}
             </ThemeProvider>
           </UseClientProvider>
+          <Analytics/>
         </body>
       </ClerkProvider>
     </html>
