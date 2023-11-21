@@ -42,6 +42,7 @@ const onSubmit = async (values: z.infer<typeof formSchema>) => {
 }
   return ( 
     <div className="flex flex-col p-4 space-y-2"> 
+      
       <Heading
         title="Image Generator"
         description="Turn your prompt into an image."
@@ -49,8 +50,10 @@ const onSubmit = async (values: z.infer<typeof formSchema>) => {
         iconColor="text-sky-500"
         bgColor="bg-sky-500/5"
       />
+      {/* <ConversationVision/> */}
       <ConversationImage images={images} isLoading={isLoading}/>
       <ConversationForm onSubmit={onSubmit} isLoading={isLoading}/>
+      
     </div>
    );
 }

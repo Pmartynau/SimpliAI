@@ -68,7 +68,7 @@ export const ClientPage = () => {
         iconColor="text-green-700"
         bgColor="bg-green-700/5"
       />
-      <ConversationHistory/>
+      {/* <ConversationHistory/> */}
       <ConversationMessages isLoading={isLoading} messages={messages} />
       <ConversationForm onSubmit={handleSubmit} isLoading={isLoading} />
     </div>

@@ -12,7 +12,7 @@ import {
   ArrowRight,
   VenetianMask,
   Bookmark,
-  Heart,
+  Eye,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -64,17 +64,17 @@ const tools = [
   {
     label: "Ai Toolbox",
     icon: FaToolbox,
-    href: "/bookmarks",
     bgColor: "bg-pink-500/10",
-    color: "text-pink-500"
+    color: "text-pink-500",
+    href: "/bookmarks"
   },
-  // {
-  // label: "FeedBack",
-  // icon: Heart,
-  // color: "text-blue-900",
-  // bgColor: "bg-blue-900/10",
-  // href: "/feedback"
-  // }
+  {
+  label: "Vision",
+  icon: Eye,
+  color: "text-blue-900",
+  bgColor: "bg-blue-900/10",
+  href: "/vision"
+  }
 ]
 const DashboardPage = () => {
   const router =  useRouter();

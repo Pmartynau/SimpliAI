@@ -19,7 +19,8 @@ import {
   Settings,
   VenetianMask,
   Bookmark,
-  Heart
+  Heart,
+  Eye
 } from "lucide-react";
 import FreeCounter from "./free-counter";
 import Loading from "@/app/loading";
@@ -45,6 +46,12 @@ const routes = [
     icon: MessageSquare,
     href: "/conversation",
     color: "text-green-700"
+  },
+  {
+    label: "Vision",
+    icon: Eye,
+    href: "/vision",
+    color: "text-blue-400"
   },
   {
     label: "Ask an Expert",
@@ -90,6 +97,7 @@ const routes = [
     href: "/settings",
     color: "text-gray-400"
   },
+
 
 ];
 
