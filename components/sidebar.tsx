@@ -51,14 +51,15 @@ const routes = [
     label: "Vision",
     icon: Eye,
     href: "/vision",
-    color: "text-blue-400"
+    color: "text-blue-400",
+    isNew: true
   },
   {
     label: "Ask an Expert",
     icon: VenetianMask,
     href: "/alter",
     color: "text-amber-500",
-    isNew: true,
+    //isNew: true,
   },
   {
     label: "Image Generator",
@@ -89,7 +90,7 @@ const routes = [
     icon: FaToolbox,
     href: "/bookmarks",
     color: "text-white",
-    isNew: true,
+   // isNew: true,
   },
   {
     label: "Settings",
