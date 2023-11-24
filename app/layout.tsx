@@ -10,7 +10,8 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
 import Head from 'next/head'
 import { UseClientProvider } from '@/components/provider/sidebar-open'
-import { Analytics } from '@vercel/analytics/react';
+import BlackFridayBanner from '@/components/black-friday'
+// import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
 
     <html lang="en" suppressHydrationWarning>
+      <BlackFridayBanner/>
       <ClerkProvider>
         <CrispProvider />
         <body className={inter.className}>
@@ -38,7 +40,7 @@ export default function RootLayout({
               {children}
             </ThemeProvider>
           </UseClientProvider>
-          <Analytics/>
+          {/* <Analytics/> */}
         </body>
       </ClerkProvider>
     </html>
