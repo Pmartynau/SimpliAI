@@ -42,7 +42,7 @@ export default function RootLayout({
             </ThemeProvider>
           </UseClientProvider>
           {/* <Analytics/> */}
-          <HotjarScript/>
+          {/* <HotjarScript/> */}
         </body>
       </ClerkProvider>
     </html>
