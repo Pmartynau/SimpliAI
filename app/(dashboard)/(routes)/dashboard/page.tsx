@@ -27,6 +27,13 @@ const tools = [
     href: "/conversation",
   },
   {
+    label: "Vision",
+    icon: Eye,
+    color: "text-blue-900",
+    bgColor: "bg-blue-900/10",
+    href: "/vision"
+    },
+  {
     label: "Ask an Expert",
     icon: VenetianMask,
     color: "text-amber-500",
@@ -68,13 +75,7 @@ const tools = [
     color: "text-pink-500",
     href: "/bookmarks"
   },
-  {
-  label: "Vision",
-  icon: Eye,
-  color: "text-blue-900",
-  bgColor: "bg-blue-900/10",
-  href: "/vision"
-  }
+ 
 ]
 const DashboardPage = () => {
   const router =  useRouter();

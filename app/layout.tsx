@@ -11,6 +11,7 @@ import { Toaster } from '@/components/ui/toaster'
 import Head from 'next/head'
 import { UseClientProvider } from '@/components/provider/sidebar-open'
 import BlackFridayBanner from '@/components/black-friday'
+import HotjarScript from './(landing)/hotjar'
 // import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -41,6 +42,7 @@ export default function RootLayout({
             </ThemeProvider>
           </UseClientProvider>
           {/* <Analytics/> */}
+          <HotjarScript/>
         </body>
       </ClerkProvider>
     </html>
