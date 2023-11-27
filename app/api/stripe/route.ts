@@ -38,6 +38,7 @@ export async function GET() {
       mode: "subscription",
       billing_address_collection: "auto",
       customer_email: user.emailAddresses[0].emailAddress,
+      allow_promotion_codes: true,
       line_items: [
         {
           price_data: {
