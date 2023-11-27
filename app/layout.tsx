@@ -41,7 +41,6 @@ export default function RootLayout({
             </ThemeProvider>
           </UseClientProvider>
           <Analytics/>
-          {/* <HotjarScript/> */}
         </body>
       </ClerkProvider>
       <BlackFridayBanner/>
