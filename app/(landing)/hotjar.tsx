@@ -5,7 +5,7 @@ import Hotjar from '@hotjar/browser';
 
 
 
-const HotjarScript = () => {
+const HotjarScript: React.FC<HotjarScriptProps> = (props) => {
   const siteId = 3757256;
   const hotjarVersion = 6;
   
