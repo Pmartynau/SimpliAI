@@ -91,9 +91,9 @@ export default function ConversationVision() {
    <>
     <Heading
       title="Vision"
-      description="Our most advanced vision model"
+      description="The latset vision model"
       icon={Eye}
-      iconColor="text-green-700" // Change icon color to match ClientPage
+      iconColor="text-pink-700" // Change icon color to match ClientPage
       bgColor="bg-green-700/5"
     />
     <div className="flex flex-col p-4 space-y-2">

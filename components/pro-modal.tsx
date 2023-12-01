@@ -31,7 +31,7 @@ const tools = [
     bgColor: "bg-sky-amber/10",
   },
   {
-    label: "Image Generator",
+    label: "Image",
     icon: ImageIcon,
     color: "text-sky-500",
     bgColor: "bg-sky-500/10",
@@ -82,7 +82,7 @@ const ProModal = () => {
         <DialogHeader>
           <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
             <div className="flex items-center gap-x-2 font-bold py-1">
-              Upgrade to SimplyFi
+              Upgrade to COSTCOBOT
               <Badge variant="gold" className="uppercase text-sm py-1">
                 Premium
               </Badge>

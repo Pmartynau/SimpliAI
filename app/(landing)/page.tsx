@@ -1,5 +1,6 @@
 
 
+import BlackFridayBanner from "@/components/black-friday";
 import LandingContent from "@/components/landing-content";
 import { LandingHero } from "@/components/landing-hero";
 import { LandingNavbar } from "@/components/landing-navbar";
@@ -13,7 +14,8 @@ const LandingPage = () => {
       <LandingNavbar />
       <LandingHero />
       <LandingContent />
-      <VoiceflowChat/>
+      {/* <VoiceflowChat/> */}
+      <BlackFridayBanner/>
     </div>
     
    );

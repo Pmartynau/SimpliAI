@@ -30,7 +30,7 @@ export const LandingNavbar = () => {
               className="rounded-full"
             />
           </div>
-          <h1 style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>SimplyFi</h1>
+          <h1 style={{ fontFamily: 'CustomFont', fontSize: '36px' }}>APP</h1>
         </Link>
         <div className="flex items-center gap-x-2">
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>

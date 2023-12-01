@@ -44,7 +44,7 @@ export async function GET() {
           price_data: {
             currency: "USD",
             product_data: {
-              name: "SimplyFi Gold",
+              name: "COSTCO Gold",
               description: "Unlimited Ai Generation"
             },
             unit_amount: 500,

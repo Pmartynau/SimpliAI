@@ -33,20 +33,21 @@ const tools = [
     bgColor: "bg-blue-900/10",
     href: "/vision"
     },
-  {
-    label: "Ask an Expert",
-    icon: VenetianMask,
-    color: "text-amber-500",
-    bgColor: "bg-amber-500/10",
-    href: "/alter",
-  },
-  {
-    label: "Image Generator",
-    icon: ImageIcon,
-    color: "text-sky-500",
-    bgColor: "bg-sky-500/10",
-    href: "/image",
-  },
+    {
+      label: "Image",
+      icon: ImageIcon,
+      color: "text-sky-500",
+      bgColor: "bg-sky-500/10",
+      href: "/image",
+    },
+  // {
+  //   label: "Ask an Expert",
+  //   icon: VenetianMask,
+  //   color: "text-amber-500",
+  //   bgColor: "bg-amber-500/10",
+  //   href: "/alter",
+  // },
+
   // {
   //   label: "Video Generator",
   //   icon: Video,
@@ -61,20 +62,20 @@ const tools = [
   //   bgColor: "bg-purple-500/10",
   //   href: "/music",
   // },
-  {
-    label: "Code Generator",
-    icon: Code,
-    color: "text-rose-700",
-    bgColor: "bg-rose-700/10",
-    href: "/code",
-  },
-  {
-    label: "Ai Toolbox",
-    icon: FaToolbox,
-    bgColor: "bg-pink-500/10",
-    color: "text-pink-500",
-    href: "/bookmarks"
-  },
+  // {
+  //   label: "Code Generator",
+  //   icon: Code,
+  //   color: "text-rose-700",
+  //   bgColor: "bg-rose-700/10",
+  //   href: "/code",
+  // },
+  // {
+  //   label: "Ai Toolbox",
+  //   icon: FaToolbox,
+  //   bgColor: "bg-pink-500/10",
+  //   color: "text-pink-500",
+  //   href: "/bookmarks"
+  // },
  
 ]
 const DashboardPage = () => {
@@ -87,7 +88,7 @@ const DashboardPage = () => {
         </h2>
         <p className="text-muted-foreground font-light text-sm 
       md:text-lg text-center">
-          Chat with the smartest AI  - Experience the power of AI
+          Chat, Image Generation, and Gpt vision
         </p>
       </div>
       <div className="px-4 md:px-2- lg:px-32 space-y-4">

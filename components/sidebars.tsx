@@ -47,7 +47,7 @@ const routes = [
     isNew: true,
   },
   {
-    label: "Image Generator",
+    label: "Image",
     icon: ImageIcon,
     href: "/image",
     color: "text-sky-500"
@@ -120,7 +120,7 @@ export const Sidebar = ({
             />
           </div>
           <h1 className={cn("text-2xl font-bold" , font.className)} >
-            SimplyFi Ai
+            COSTCO BOT
           </h1>
         </Link>
         

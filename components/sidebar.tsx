@@ -35,12 +35,12 @@ const font = Montserrat({
   subsets: ["latin"],
 });
 const routes = [
-  {
-    label: "Dashboard",
-    icon: LayoutDashboard,
-    href: "/dashboard",
-    color: "text-sky-white"
-  },
+  // {
+  //   label: "Dashboard",
+  //   icon: LayoutDashboard,
+  //   href: "/dashboard",
+  //   color: "text-sky-white"
+  // },
   {
     label: "Conversation",
     icon: MessageSquare,
@@ -52,15 +52,15 @@ const routes = [
     icon: Eye,
     href: "/vision",
     color: "text-blue-400",
-    isNew: true
+    //isNew: true
   },
-  {
-    label: "Ask an Expert",
-    icon: VenetianMask,
-    href: "/alter",
-    color: "text-amber-500",
-    //isNew: true,
-  },
+  // {
+  //   label: "Ask an Expert",
+  //   icon: VenetianMask,
+  //   href: "/alter",
+  //   color: "text-amber-500",
+  //   //isNew: true,
+  // },
   {
     label: "Image Generator",
     icon: ImageIcon,
@@ -79,25 +79,25 @@ const routes = [
   //   href: "/music",
   //   color: "text-purple-600"
   // },
-  {
-    label: "Code Generator",
-    icon: Code,
-    href: "/code",
-    color: "text-rose-700"
-  },
-  {
-    label: "Ai Toolbox",
-    icon: FaToolbox,
-    href: "/bookmarks",
-    color: "text-white",
-   // isNew: true,
-  },
-  {
-    label: "Settings",
-    icon: Settings,
-    href: "/settings",
-    color: "text-gray-400"
-  },
+  // {
+  //   label: "Code Generator",
+  //   icon: Code,
+  //   href: "/code",
+  //   color: "text-rose-700"
+  // },
+  // {
+  //   label: "Ai Toolbox",
+  //   icon: FaToolbox,
+  //   href: "/bookmarks",
+  //   color: "text-white",
+  //  // isNew: true,
+  // },
+  // {
+  //   label: "Settings",
+  //   icon: Settings,
+  //   href: "/settings",
+  //   color: "text-gray-400"
+  // },
 
 
 ];
@@ -166,7 +166,7 @@ const Sidebar = ({
                       />
                     </div>
                     <h1 className={cn("text-2xl font-bold", font.className)} >
-                      SimplyFi
+                      
                     </h1>
 
                   </Link>
@@ -216,9 +216,9 @@ const Sidebar = ({
                 </div>
               </div>
 
-              <FreeCounter
+              {/* <FreeCounter
                 apiLimitCount={apiLimitCount}
-                isPro={isPro} />
+                isPro={isPro} /> */}
 
             </div>
           )}

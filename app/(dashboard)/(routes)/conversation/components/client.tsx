@@ -63,7 +63,7 @@ export const ClientPage = () => {
     <div className="flex flex-col p-4 space-y-2">
       <Heading
         title="Conversation"
-        description="Our most advanced conversation model."
+        description="Latest conversation model"
         icon={MessageSquare}
         iconColor="text-green-700"
         bgColor="bg-green-700/5"

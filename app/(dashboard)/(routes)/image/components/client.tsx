@@ -44,7 +44,7 @@ const onSubmit = async (values: z.infer<typeof formSchema>) => {
     <div className="flex flex-col p-4 space-y-2"> 
       
       <Heading
-        title="Image Generator"
+        title="Image"
         description="Turn your prompt into an image."
         icon={ImageIcon}
         iconColor="text-sky-500"

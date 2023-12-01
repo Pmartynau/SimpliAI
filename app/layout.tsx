@@ -9,14 +9,14 @@ import { CrispProvider } from '@/components/provider/crisp-provider'
 import { ThemeProvider } from '@/components/theme-provider'
 
 import { UseClientProvider } from '@/components/provider/sidebar-open'
-import BlackFridayBanner from '@/components/black-friday'
+// import BlackFridayBanner from '@/components/black-friday'
 import HotjarScript from './(landing)/hotjar'
 import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'SimplyFi',
+  title: 'AI BOT',
   description: 'Ai Platform',
   manifest: '/manifest.webmanifest'
 }
@@ -43,7 +43,7 @@ export default function RootLayout({
           <Analytics/>
         </body>
       </ClerkProvider>
-      <BlackFridayBanner/>
+      {/* <BlackFridayBanner/> */}
     </html>
 
   )
