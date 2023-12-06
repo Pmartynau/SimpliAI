@@ -91,9 +91,9 @@ export default function ConversationVision() {
    <>
     <Heading
       title="Vision"
-      description="The latset vision model"
+      description="The latest vision model"
       icon={Eye}
-      iconColor="text-pink-700" // Change icon color to match ClientPage
+      iconColor="text-red-700" // Change icon color to match ClientPage
       bgColor="bg-green-700/5"
     />
     <div className="flex flex-col p-4 space-y-2">
@@ -122,6 +122,7 @@ export default function ConversationVision() {
           <button
             type="submit"
             className="p-2 bg-gray-600 rounded-md mb-4"
+            
            // disabled={isLoading}
           >
             Ask ChatGPT To Analyze Your Image

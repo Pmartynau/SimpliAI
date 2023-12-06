@@ -16,7 +16,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AI BOT',
+  title: 'Chatbot',
   description: 'Ai Platform',
   manifest: '/manifest.webmanifest'
 }

@@ -44,7 +44,7 @@ export const LandingHero = () => {
         </Link>
       </div>
       <div className="text-white/75 text-xs md:text-sm font-normal">
-        Enjoy 10 Free Credits Today.
+       
       </div>
     </div></>
   )

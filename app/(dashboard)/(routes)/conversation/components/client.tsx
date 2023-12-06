@@ -19,8 +19,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Separator } from "@/components/ui/separator";
 import ConversationMessages from "./conversation-messages";
 import { ConversationForm } from "./coversation-form";
-import ConversationHistory from "../../image/components/conversation-history";
 
+import ChatGPT from "../../image/components/conversation-share";
 export const ClientPage = () => {
   const proModal = useProModal();
   const router = useRouter();
@@ -68,7 +68,7 @@ export const ClientPage = () => {
         iconColor="text-green-700"
         bgColor="bg-green-700/5"
       />
-      {/* <ConversationHistory/> */}
+         <ChatGPT/>
       <ConversationMessages isLoading={isLoading} messages={messages} />
       <ConversationForm onSubmit={handleSubmit} isLoading={isLoading} />
     </div>

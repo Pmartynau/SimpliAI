@@ -13,7 +13,7 @@ const Loader = () => {
         />
       </div>
       <p className="text-sm text-muted-foreground">
-        thinking...
+        Thinking...
       </p>
     </div>
    );

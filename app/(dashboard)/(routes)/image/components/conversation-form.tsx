@@ -25,7 +25,7 @@ export const ConversationForm = ({
     defaultValues: {
       prompt: "",
       amount: "1",
-      resolution: "512x512"
+      resolution: "1024x1024"
     }
   });
   const handleFormSubmit = async (values: z.infer<typeof formSchema>) => {
@@ -151,14 +151,14 @@ export const ConversationForm = ({
             <Button
               variant="premium"
               className="relative lg:absolute lg:top-6 lg:right-2 col-span-12  lg:col-span-2 "
-              disabled={isLoading}
-               
+              disabled={isLoading}           
             >
               Generate
-            </Button>
+            </Button>     
           </div>
         </form>
       </Form>
+      
     </div>);
 }
 

@@ -13,9 +13,8 @@ const LandingPage = () => {
     <div className="h-screen">
       <LandingNavbar />
       <LandingHero />
-      <LandingContent />
+      {/* <LandingContent /> */}
       {/* <VoiceflowChat/> */}
-      <BlackFridayBanner/>
     </div>
     
    );

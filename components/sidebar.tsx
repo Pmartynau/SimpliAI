@@ -35,12 +35,12 @@ const font = Montserrat({
   subsets: ["latin"],
 });
 const routes = [
-  // {
-  //   label: "Dashboard",
-  //   icon: LayoutDashboard,
-  //   href: "/dashboard",
-  //   color: "text-sky-white"
-  // },
+  {
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    href: "/dashboard",
+    color: "text-sky-white"
+  },
   {
     label: "Conversation",
     icon: MessageSquare,
@@ -48,10 +48,16 @@ const routes = [
     color: "text-green-700"
   },
   {
+    label: "Image",
+    icon: ImageIcon,
+    href: "/image",
+    color: "text-sky-500"
+  },
+  {
     label: "Vision",
     icon: Eye,
     href: "/vision",
-    color: "text-blue-400",
+    color: "text-red-400",
     //isNew: true
   },
   // {
@@ -61,12 +67,7 @@ const routes = [
   //   color: "text-amber-500",
   //   //isNew: true,
   // },
-  {
-    label: "Image Generator",
-    icon: ImageIcon,
-    href: "/image",
-    color: "text-sky-500"
-  },
+
   // {
   //   label: "Video Generator",
   //   icon: Video,
@@ -166,7 +167,7 @@ const Sidebar = ({
                       />
                     </div>
                     <h1 className={cn("text-2xl font-bold", font.className)} >
-                      
+                      Chatbot
                     </h1>
 
                   </Link>

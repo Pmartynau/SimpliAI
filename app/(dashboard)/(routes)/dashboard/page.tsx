@@ -88,7 +88,7 @@ const DashboardPage = () => {
         </h2>
         <p className="text-muted-foreground font-light text-sm 
       md:text-lg text-center">
-          Chat, Image Generation, and Gpt vision
+          Chat, Image Generation, and GPT vision
         </p>
       </div>
       <div className="px-4 md:px-2- lg:px-32 space-y-4">
