@@ -1,3 +1,11 @@
+features to implement:
+    1. implement history for chat
+    2. implement use your own api key
+    3. implement 
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
