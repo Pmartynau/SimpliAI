@@ -62,7 +62,7 @@ isLoading
           )}
           {messages.length === 0 && !isLoading && (
             <Empty
-              label="No conversation stated. "
+              label="No conversation started. "
             />
           )}
       </div>
