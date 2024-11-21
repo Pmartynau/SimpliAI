@@ -17,7 +17,7 @@ const DashboardLayout = async ({
     <div className="flex h-full">
       <Sidebar 
         isPro={isPro}
-        apiLimitCount={apiLimitCount}/>
+        apiLimitCount={0}/>
       
       <main className="flex-auto">
         <div className="ml-auto"> {/* This div will push Navbar to the right */}

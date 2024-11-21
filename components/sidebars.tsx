@@ -149,7 +149,7 @@ export const Sidebar = ({
       </div>
     
       <FreeCounter 
-      apiLimitCount={apiLimitCount}
+      apiLimitCount={0}
       isPro={isPro}/>
       
     </div>

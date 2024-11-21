@@ -58,7 +58,7 @@ const MobileSidebar = ({
         <SheetContent side="left" className="p-0">
           <Sidebar
             isPro={isPro}
-            apiLimitCount={apiLimitCount}
+            apiLimitCount={0}
             onClose={handleSidebarClose} // Pass the handleSidebarClose function as the onClose prop
           />
           
