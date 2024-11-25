@@ -13,6 +13,7 @@ import {
   VenetianMask,
   Bookmark,
   Eye,
+  Book
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -33,6 +34,13 @@ const tools = [
     bgColor: "bg-blue-900/10",
     href: "/vision"
     },
+    {
+    label: "Story",
+    icon: Book,
+    color: "text-yellow-900",
+    bgColor: "bg-yellow-900/10",
+    href: "/vision"
+      }, 
   {
     label: "Ask an Expert",
     icon: VenetianMask,
@@ -47,20 +55,20 @@ const tools = [
     bgColor: "bg-sky-500/10",
     href: "/image",
   },
-  // {
-  //   label: "Video Generator",
-  //   icon: Video,
-  //   color: "text-red-500",
-  //   bgColor: "bg-red-500/10",
-  //   href: "/video",
-  // },
-  // {
-  //   label: "Music Generator",
-  //   icon: Music,
-  //   color: "text-purple-500",
-  //   bgColor: "bg-purple-500/10",
-  //   href: "/music",
-  // },
+  {
+    label: "Video Generator",
+    icon: Video,
+    color: "text-red-500",
+    bgColor: "bg-red-500/10",
+    href: "/video",
+  },
+  {
+    label: "Music Generator",
+    icon: Music,
+    color: "text-purple-500",
+    bgColor: "bg-purple-500/10",
+    href: "/music",
+  },
   {
     label: "Code Generator",
     icon: Code,

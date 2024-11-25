@@ -1,15 +1,15 @@
 generator drizzle {
   provider = "drizzle-prisma-generator"
-  output   = "./drizzle" // Where to put generated Drizle tables
+  output   = "./drizzle"
+}
+
+generator client {
+  provider = "prisma-client-js"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
-}
-
-generator client {
-  provider = "prisma-client-js"
 }
 
 model UserApiLimit {
@@ -23,10 +23,10 @@ model UserApiLimit {
 model UserSubscription {
   id                     String    @id @default(cuid())
   userId                 String    @unique
-  stripeCustomerId       String?   @unique @map(name: "stripe_customer_id")
-  stripeSubscriptionId   String?   @unique @map(name: "stripe_subscription_id")
-  stripePriceId          String?   @map(name: "stripe_price_id")
-  stripeCurrentPeriodEnd DateTime? @map(name: "stripe_current_period_id")
+  stripeCustomerId       String?   @unique @map("stripe_customer_id")
+  stripeSubscriptionId   String?   @unique @map("stripe_subscription_id")
+  stripePriceId          String?   @map("stripe_price_id")
+  stripeCurrentPeriodEnd DateTime? @map("stripe_current_period_id")
 }
 
 model Category {
@@ -36,24 +36,54 @@ model Category {
 }
 
 model Alter {
-  id           String @id @default(uuid())
+  id           String    @id @default(uuid())
   userId       String
   userName     String
   src          String
-  name         String @db.Text
+  name         String
   description  String
-  instructions String @db.Text
-  seed         String @db.Text
+  instructions String
+  seed         String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  categoryId   String
+  category     Category  @relation(fields: [categoryId], references: [id])
+  messages     Message[]
 
+  @@index([categoryId])
+}
+
+model Message {
+  id        String   @id @default(uuid())
+  role      Role
+  content   String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  alterId   String
+  userId    String
+  alter     Alter    @relation(fields: [alterId], references: [id], onDelete: Cascade)
 
-  categoryId String
+  @@index([alterId])
+}
 
-  category Category @relation(fields: [categoryId], references: [id])
+model BookmarksCategory {
+  id        String      @id @default(uuid())
+  name      String
+  bookmarks Bookmarks[]
+}
 
-  messages Message[]
-  // @@fulltext([name])
+model Bookmarks {
+  id          String            @id @default(uuid())
+  userId      String
+  src         String
+  name        String
+  url         String
+  description String
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  categoryId  String
+  tags        String
+  category    BookmarksCategory @relation(fields: [categoryId], references: [id])
 
   @@index([categoryId])
 }
@@ -61,47 +91,4 @@ model Alter {
 enum Role {
   user
   system
-}
-
-model Message {
-  id        String   @id @default(uuid())
-  role      Role
-  content   String   @db.Text
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  alterId String
-  userId  String
-
-  alter Alter @relation(fields: [alterId], references: [id], onDelete: Cascade)
-
-  @@index([alterId])
-}
-
-model BookmarksCategory {
-  id   String @id @default(uuid())
-  name String
-
-  bookmarks Bookmarks[]
-}
-
-model Bookmarks {
-  id String @id @default(uuid())
-
-  userId      String
-  src         String
-  name        String @db.Text()
-  url         String @db.Text()
-  description String @db.Text()
-
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  categoryId String
-  category   BookmarksCategory @relation(fields: [categoryId], references: [id])
-
-  tags String @db.Text()
-  //@@fulltext([name, tags])
-
-  @@index([categoryId])
 }
