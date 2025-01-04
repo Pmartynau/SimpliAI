@@ -8,7 +8,6 @@ import { Button } from '@nextui-org/button'
 import { chatSession } from '@/config/GeminiAi'
 import { db } from '@/config/db'
 import { StoryData, Users } from '@/config/schema'
-//@ts-ignore
 import uuid4 from "uuid4";
 import CustomLoader from './_components/CustomLoader'
 import axios from 'axios'
@@ -71,6 +70,7 @@ export interface formDataType {
         const result=await chatSession.sendMessage(FINAL_PROMPT);
         const story=JSON.parse(result?.response.text().replace(/(})(,?)(\n *\})/g, "$1,"));   
     }
+  
     const imageResp=await axios.post('/api/generate-image',{
         prompt:'Add text with  title:'+story?.story_cover?.title+
         " in bold text for book cover, "+story?.story_cover?.image_prompt
