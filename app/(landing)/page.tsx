@@ -11,7 +11,7 @@ const LandingPage = () => {
   return ( 
     <div className="h-screen">
       <LandingNavbar />
-      {/* <LandingHero /> */}
+      <LandingHero />
       <LandingContent />
       <VoiceflowChat/>
     </div>
