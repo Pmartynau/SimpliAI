@@ -49,7 +49,6 @@ const AlterPage = async ({
       <AlterEgoPage/>
       <Categories data={categories}/>
       <Alters  data={data}/> 
-     
     </div>
   )
 }

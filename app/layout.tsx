@@ -34,7 +34,6 @@ export default function RootLayout({
         <body className={inter.className}>
           <UseClientProvider>
             <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-
               <ModalProvider />
               <ToasterProvider />
               {children}

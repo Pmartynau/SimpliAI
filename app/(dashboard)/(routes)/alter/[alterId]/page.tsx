@@ -5,6 +5,7 @@ import { auth, redirectToSignIn } from "@clerk/nextjs";
 interface  AlterIdPageProps {
   params: {
     alterId: string;
+    altar: string
   }
 }
 

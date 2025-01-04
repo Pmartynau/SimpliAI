@@ -61,7 +61,7 @@ model Message {
   updatedAt DateTime @updatedAt
   alterId   String
   userId    String
-  alter     Alter    @relation(fields: [alterId], references: [id], onDelete: Cascade)
+  alter     String    @relation(fields: [alterId], references: [id], onDelete: Cascade)
 
   @@index([alterId])
 }
