@@ -37,6 +37,7 @@ model Category {
 
 model Alter {
   id           String    @id @default(uuid())
+  altar        String
   userId       String
   userName     String
   src          String
