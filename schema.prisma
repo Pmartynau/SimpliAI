@@ -37,7 +37,6 @@ model Category {
 
 model Alter {
   id           String    @id @default(uuid())
-  altar        String
   userId       String
   userName     String
   src          String
@@ -49,6 +48,7 @@ model Alter {
   updatedAt    DateTime  @updatedAt
   categoryId   String
   category     Category  @relation(fields: [categoryId], references: [id])
+  alter        Alter @relation(fields: [alterId], references: [id], onDelete: Cascade)
   messages     Message[]
 
   @@index([categoryId])
