@@ -120,7 +120,7 @@ export const Sidebar = ({
             />
           </div>
           <h1 className={cn("text-2xl font-bold" , font.className)} >
-            SimplyFi Ai
+            SimplyFi 
           </h1>
         </Link>
         

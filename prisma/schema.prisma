@@ -1,0 +1,95 @@
+generator drizzle {
+  provider = "drizzle-prisma-generator"
+  output   = "./drizzle"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model UserApiLimit {
+  id        String   @id @default(cuid())
+  userId    String   @unique
+  count     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model UserSubscription {
+  id                     String    @id @default(cuid())
+  userId                 String    @unique
+  stripeCustomerId       String?   @unique @map("stripe_customer_id")
+  stripeSubscriptionId   String?   @unique @map("stripe_subscription_id")
+  stripePriceId          String?   @map("stripe_price_id")
+  stripeCurrentPeriodEnd DateTime? @map("stripe_current_period_id")
+}
+
+model Category {
+  id     String  @id @default(uuid())
+  name   String
+  alters Alter[]
+}
+
+model Alter {
+  id           String    @id @default(uuid())
+  userId       String
+  userName     String
+  src          String
+  name         String
+  description  String
+  instructions String
+  seed         String
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  categoryId   String
+  category     Category  @relation(fields: [categoryId], references: [id])
+  alter        Alter @relation(fields: [alterId], references: [id], onDelete: Cascade)
+  messages     Message[]
+
+  @@index([categoryId])
+}
+
+model Message {
+  id        String   @id @default(uuid())
+  role      Role
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  alterId   String
+  userId    String
+  alter     String    @relation(fields: [alterId], references: [id], onDelete: Cascade)
+
+  @@index([alterId])
+}
+
+model BookmarksCategory {
+  id        String      @id @default(uuid())
+  name      String
+  bookmarks Bookmarks[]
+}
+
+model Bookmarks {
+  id          String            @id @default(uuid())
+  userId      String
+  src         String
+  name        String
+  url         String
+  description String
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  categoryId  String
+  tags        String
+  category    BookmarksCategory @relation(fields: [categoryId], references: [id])
+
+  @@index([categoryId])
+}
+
+enum Role {
+  user
+  system
+}
